@@ -6,6 +6,7 @@
     <title>Soundcloud</title>
     <style>
         body {
+            background-image: url(/img/2e.png);
             margin: 0;
             padding: 0;
             background-color: #000;
@@ -13,13 +14,12 @@
             font-family: Arial, sans-serif;
             display: flex;
             flex-direction: column;
-            align-items: center;
             justify-content: flex-start;
             height: 100vh;
         }
         .header {
-            text-align: center;
-            margin-bottom: 40px; /* Увеличен отступ */
+            text-align: left;
+            margin-bottom: 40px;
             width: 100%;
         }
         .logo {
@@ -29,20 +29,20 @@
         .bold-text {
             font-weight: bold;
             font-size: 24px;
-            margin-bottom: 200px; /* Увеличен отступ */
+            margin-bottom: 200px;
         }
         .container {
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 40px; /* Увеличен отступ между карточками */
+            gap: 70px;
             flex-grow: 1;
         }
         .card {
-            background-color: #333;
+            background-color: #202020;
             border-radius: 10px;
             overflow: hidden;
-            width: 700px; /* Увеличен размер карточек */
+            width: 700px;
             text-align: center;
             display: flex;
             flex-direction: column;
@@ -72,17 +72,22 @@
             color: #fff;
         }
         .audio-row audio {
-            width: 300px; /* Ограничение ширины аудиоплееров */
+            width: 300px;
         }
-        .footer {
-            margin-top: auto;
-            text-align: center;
-            padding: 20px;
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 10px;
         }
-        .footer a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 10px;
+        .gold-text {
+            color: #FFD700;
+        }
+        .grey-text {
+            color: #C0C0C0;
+        }
+        .bichok-text {
+            color: #B87333;
         }
     </style>
 </head>
@@ -91,7 +96,7 @@
         <img src="/img/SoundCloud-Simbolo.png" alt="Логотип" class="logo">
     </div>
     <div class="bold-text">
-        <h1>Самые громкие релизы за последние 4 месяца</h1>
+        <h1>Самые громкие релизы за  <p>последние 4 месяца</p></h1>
     </div>
     <div class="container">
         <div class="card">
@@ -102,7 +107,7 @@
             </div>
             <div class="audio-container">
                 <div class="audio-row">
-                    <div class="audio-description"><h4>Training Day</h4>
+                    <div class="audio-description"><h4>🏅Training Day</h4>
                         <p>🅴 Big Baby Tape,Aarne</p>
                     </div>
                     <audio controls>
@@ -118,7 +123,7 @@
                     </audio>
                 </div>
                 <div class="audio-row">
-                    <div class="audio-description"><h4>MJ Flow</h4>
+                    <div class="audio-description"><h4>🏅MJ Flow</h4>
                         <p>🅴 Big Baby Tape,Aarne</p>
                     </div>
                     <audio controls>
@@ -150,7 +155,7 @@
                     </audio>
                 </div>
                 <div class="audio-row">
-                    <div class="audio-description"><h4>Supersonic</h4>
+                    <div class="audio-description"><h4 class="gold-text">🥇Supersonic</h4>
                         <p>🅴 Big Baby Tape,Aarne</p>
                     </div>
                     <audio controls>
@@ -158,7 +163,7 @@
                     </audio>
                 </div>
                 <div class="audio-row">
-                    <div class="audio-description"><h4>Ameli</h4>
+                    <div class="audio-description"><h4 class="grey-text">🥈Ameli</h4>
                         <p>🅴 Big Baby Tape,Aarne,Toxi$</p>
                     </div>
                     <audio controls>
@@ -166,7 +171,7 @@
                     </audio>
                 </div>
                 <div class="audio-row">
-                    <div class="audio-description"><h4>EDM</h4>
+                    <div class="audio-description"><h4 class="bichok-text">🥉EDM</h4>
                         <p>🅴 Big Baby Tape,Aarne,Платина</p>
                     </div>
                     <audio controls>
@@ -174,7 +179,7 @@
                     </audio>
                 </div>
                 <div class="audio-row">
-                    <div class="audio-description"><h4>Closer</h4>
+                    <div class="audio-description"><h4>🏅Closer</h4>
                         <p>🅴 Big Baby Tape,Aarne</p>
                     </div>
                     <audio controls>
@@ -222,6 +227,11 @@
                     </audio>
                 </div>
             </div>
+            <h6>Ⓟ2024BENZO RECORDS</h6>
+            <h4>Перейти к альбому на:</h4>
+            <iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="470" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/peekaboo/1752831350"></iframe>
+            <iframe frameborder="0" allow="clipboard-write" style="border:none;width:100%;height:450px;" width="100%" height="450" src="https://music.yandex.ru/iframe/album/31785098">Слушайте <a href='https://music.yandex.ru/album/31785098'>PEEKABOO</a> — <a href='https://music.yandex.ru/artist/5701276'>Big Baby Tape</a> на Яндекс Музыке</iframe>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/7LP4dCklRhdTncqIYesDqi?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </div>
         <div class="card">
             <img src="/img/F84B588D-84CA-4CDB-A39B-19F8B6137426_sk1.jpeg" alt="Фото 2">
@@ -231,7 +241,7 @@
             </div>
             <div class="audio-container">
                 <div class="audio-row">
-                    <div class="audio-description"><h4>Звездопад</h4>
+                    <div class="audio-description"><h4 class="bichok-text">🥉Звездопад</h4>
                         <p> SODA LUV,Моя Мишель</p>
                     </div>
                     <audio controls>
@@ -239,7 +249,7 @@
                     </audio>
                 </div>
                 <div class="audio-row">
-                    <div class="audio-description"><h4>Стоик</h4>
+                    <div class="audio-description"><h4 class="gold-text">🥇Стоик</h4>
                         <p> SODA LUV</p>
                     </div>
                     <audio controls>
@@ -263,7 +273,7 @@
                     </audio>
                 </div>
                 <div class="audio-row">
-                    <div class="audio-description"><h4>Рассвет</h4>
+                    <div class="audio-description"><h4>🏅Рассвет</h4>
                         <p> SODA LUV,Дима Билан</p>
                     </div>
                     <audio controls>
@@ -271,7 +281,7 @@
                     </audio>
                 </div>
                 <div class="audio-row">
-                    <div class="audio-description"><h4>Душа</h4>
+                    <div class="audio-description"><h4>🏅Душа</h4>
                         <p> SODA LUV</p>
                     </div>
                     <audio controls>
@@ -279,7 +289,7 @@
                     </audio>
                 </div>
                 <div class="audio-row">
-                    <div class="audio-description"><h4>Самостоятельно</h4>
+                    <div class="audio-description"><h4 class="grey-text">🥈Самостоятельно</h4>
                         <p> SODA LUV</p>
                     </div>
                     <audio controls>
@@ -328,7 +338,7 @@
                     </audio>
                 </div>
                 <div class="audio-row">
-                    <div class="audio-description"><h4>Тысячи рук</h4>
+                    <div class="audio-description"><h4>⭐Тысячи рук</h4>
                         <p> SODA LUV</p>
                     </div>
                     <audio controls>
@@ -352,6 +362,11 @@
                     </audio>
                 </div>
             </div>
+            <h6>Ⓟ2024Effective Records</h6>
+            <h4>Перейти к альбому на:</h4>
+            <iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="470" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/soda-luv/1749508777"></iframe>
+            <iframe frameborder="0" allow="clipboard-write" style="border:none;width:100%;height:450px;" width="100%" height="450" src="https://music.yandex.ru/iframe/album/31497207">Слушайте <a href='https://music.yandex.ru/album/31497207'>SODA LUV</a> — <a href='https://music.yandex.ru/artist/6142275'>SODA LUV</a> на Яндекс Музыке</iframe>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/749GFj247H5sISmdzXJDuk?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </div>
         <div class="card">
             <img src="/img/14FF8F26-E24A-4C93-9028-B9C95B768539_sk1.jpeg" alt="Фото 3">
@@ -361,7 +376,7 @@
             </div>
             <div class="audio-container">
                 <div class="audio-row">
-                    <div class="audio-description"><h4>Время на веселье</h4>
+                    <div class="audio-description"><h4>🏅Время на веселье</h4>
                         <p>🅴 Платина</p>
                     </div>
                     <audio controls>
@@ -377,7 +392,7 @@
                     </audio>
                 </div>
                 <div class="audio-row">
-                    <div class="audio-description"><h4>Бассок</h4>
+                    <div class="audio-description"><h4 class="gold-text">🥇Бассок</h4>
                         <p>🅴 Платина,Voskresenskii</p>
                     </div>
                     <audio controls>
@@ -385,7 +400,7 @@
                     </audio>
                 </div>
                 <div class="audio-row">
-                    <div class="audio-description"><h4>Бетховен</h4>
+                    <div class="audio-description"><h4>🏅Бетховен</h4>
                         <p>🅴 Платина,Scally Milano</p>
                     </div>
                     <audio controls>
@@ -409,7 +424,7 @@
                     </audio>
                 </div>
                 <div class="audio-row">
-                    <div class="audio-description"><h4>Виновата сама..</h4>
+                    <div class="audio-description"><h4 class="bichok-text">🥉Виновата сама..</h4>
                         <p>🅴 Платина</p>
                     </div>
                     <audio controls>
@@ -425,7 +440,7 @@
                     </audio>
                 </div>
                 <div class="audio-row">
-                    <div class="audio-description"><h4>Бритни Спирс</h4>
+                    <div class="audio-description"><h4>🏅Бритни Спирс</h4>
                         <p>🅴 Платина</p>
                     </div>
                     <audio controls>
@@ -441,7 +456,7 @@
                     </audio>
                 </div>
                 <div class="audio-row">
-                    <div class="audio-description"><h4>Последнее свидание</h4>
+                    <div class="audio-description"><h4>🏅Последнее свидание</h4>
                         <p>🅴 Платина,Егор Крид</p>
                     </div>
                     <audio controls>
@@ -449,7 +464,7 @@
                     </audio>
                 </div>
                 <div class="audio-row">
-                    <div class="audio-description"><h4>Завидуют</h4>
+                    <div class="audio-description"><h4 class="grey-text">🥈Завидуют</h4>
                         <p>🅴 Платина</p>
                     </div>
                     <audio controls>
@@ -473,7 +488,7 @@
                     </audio>
                 </div>
                 <div class="audio-row">
-                    <div class="audio-description"><h4>Плывут</h4>
+                    <div class="audio-description"><h4>🏅Плывут</h4>
                         <p>🅴 Платина</p>
                     </div>
                     <audio controls>
@@ -481,12 +496,13 @@
                     </audio>
                 </div>
             </div>
+            <h6>Ⓟ2024РНБ КЛУБ</h6>
+            <h4>Перейти к альбому на:</h4>
+            <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="470" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/%D0%BF%D0%BB%D0%B0%D1%82%D0%B8%D0%BD%D0%B0/1739125372"></iframe>
+            <iframe frameborder="0" allow="clipboard-write" style="border:none;width:100%;height:450px;" width="100%" height="450" src="https://music.yandex.ru/iframe/album/30549757">Слушайте <a href='https://music.yandex.ru/album/30549757'>Платина</a> — <a href='https://music.yandex.ru/artist/6531894'>Платина</a> на Яндекс Музыке</iframe>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/7knOFjfoZgvKFymD31Y7jN?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </div>
     </div>
-    <div class="footer">
-        <a href="https://example.com/link1">Ссылка 1</a>
-        <a href="https://example.com/link2">Ссылка 2</a>
-        <a href="https://example.com/link3">Ссылка 3</a>
-    </div>
+</div>
 </body>
 </html>
