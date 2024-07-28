@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soundcloud</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100vh;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px; /* Увеличен отступ */
+            width: 100%;
+        }
+        .logo {
+            width: 500px;
+            height: auto;
+        }
+        .bold-text {
+            font-weight: bold;
+            font-size: 24px;
+            margin-bottom: 200px; /* Увеличен отступ */
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px; /* Увеличен отступ между карточками */
+            flex-grow: 1;
+        }
+        .card {
+            background-color: #333;
+            border-radius: 10px;
+            overflow: hidden;
+            width: 700px; /* Увеличен размер карточек */
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        .card .description {
+            padding: 10px;
+        }
+        .audio-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .audio-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .audio-description {
+            flex: 1;
+            color: #fff;
+        }
+        .audio-row audio {
+            width: 200px; /* Ограничение ширины аудиоплееров */
+        }
+        .footer {
+            margin-top: auto;
+            text-align: center;
+            padding: 20px;
+        }
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="/img/SoundCloud-Simbolo.png" alt="Логотип" class="logo">
+    </div>
+    <div class="bold-text">
+        <h1>Самые громкие релизы за последние 2 месяца</h1>
+    </div>
+    <div class="container">
+        <div class="card">
+            <img src="/img/89436C44-18AE-43FC-86E9-D3A54E261AB1_sk1.jpeg" alt="Фото 1">
+            <div class="description">
+                <h1>PEEKABOO</h1>
+                <p><h4>Big Baby Tape • Aarne</h4> 2024 • 15 треков,37мин.6 сек.</p>
+            </div>
+            <div class="audio-container">
+                <div class="audio-row">
+                    <div class="audio-description"><h4>Training Day</h4>
+                        <p>🅴 Big Baby Tape,Aarne</p>
+                    </div>
+                    <audio controls>
+                        <source src="/img/big-baby-tape-aarne-training-day-mp3.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="audio-row">
+                    <div class="audio-description"><h4>Coldest Man</h4>
+                        <p>🅴 Big Baby Tape,Aarne</p>
+                    </div>
+                    <audio controls>
+                        <source src="/img/big-baby-tape-aarne-coldest-man-mp3.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="audio-row">
+                    <div class="audio-description"><h4>MJ Flow</h4>
+                        <p>🅴 Big Baby Tape,Aarne</p>
+                    </div>
+                    <audio controls>
+                        <source src="/img/big-baby-tape-aarne-mj-flow-mp3.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="audio-row">
+                    <div class="audio-description"><h4>Not Obama</h4>
+                        <p>🅴 Big Baby Tape,Aarne</p>
+                    </div>
+                    <audio controls>
+                        <source src="/img/big-baby-tape-aarne-not-obama-mp3.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="audio-row">
+                    <div class="audio-description"><h4>Da Law</h4>
+                        <p>🅴 Big Baby Tape,Aarne,icegergert</p>
+                    </div>
+                    <audio controls>
+                        <source src="/img/big-baby-tape-aarne-icegergert-da-law-mp3.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="audio-row">
+                    <div class="audio-description"><h4>BFF interlude</h4>
+                        <p>🅴 Big Baby Tape,Aarne</p>
+                    </div>
+                    <audio controls>
+                        <source src="/img/big-baby-tape-aarne-bff-interlude-mp3.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="audio-row">
+                    <div class="audio-description"><h4>Supersonic</h4>
+                        <p>🅴 Big Baby Tape,Aarne</p>
+                    </div>
+                    <audio controls>
+                        <source src="/img/big-baby-tape-aarne-supersonic-mp3.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="audio-row">
+                    <div class="audio-description"><h4>Ameli</h4>
+                        <p>🅴 Big Baby Tape,Aarne,Toxi$</p>
+                    </div>
+                    <audio controls>
+                        <source src="/img/big-baby-tape-aarne-toxi-ameli-mp3.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="audio-row">
+                    <div class="audio-description"><h4>EDM</h4>
+                        <p>🅴 Big Baby Tape,Aarne,Платина</p>
+                    </div>
+                    <audio controls>
+                        <source src="/img/big-baby-tape-aarne-platina-edm-mp3.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="audio-row">
+                    <div class="audio-description"><h4>Closer</h4>
+                        <p>🅴 Big Baby Tape,Aarne</p>
+                    </div>
+                    <audio controls>
+                        <source src="/img/big-baby-tape-aarne-closer-mp3.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="audio-row">
+                    <div class="audio-description"><h4>Taz Muzik</h4>
+                        <p>🅴 Big Baby Tape,Aarne,Voskresenskii</p>
+                    </div>
+                    <audio controls>
+                        <source src="/img/big-baby-tape-aarne-voskresenskii-taz-muzik-mp3.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="audio-row">
+                    <div class="audio-description"><h4>FREESOSA</h4>
+                        <p>🅴 Big Baby Tape,Aarne,FEDUK</p>
+                    </div>
+                    <audio controls>
+                        <source src="/img/big-baby-tape-aarne-feduk-freesosa-mp3.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="audio-row">
+                    <div class="audio-description"><h4>Krug</h4>
+                        <p>🅴 Big Baby Tape,Aarne,Платина</p>
+                    </div>
+                    <audio controls>
+                        <source src="/img/big-baby-tape-aarne-platina-krug-mp3.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="audio-row">
+                    <div class="audio-description"><h4>Four Seasons</h4>
+                        <p>🅴 Big Baby Tape,Aarne</p>
+                    </div>
+                    <audio controls>
+                        <source src="/img/big-baby-tape-aarne-four-seasons-mp3.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="audio-row">
+                    <div class="audio-description"><h4>AAutro</h4>
+                        <p>🅴 Big Baby Tape,Aarne</p>
+                    </div>
+                    <audio controls>
+                        <source src="/img/big-baby-tape-aarne-aautro-mp3.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="photo2.jpg" alt="Фото 2">
+            <div class="description">
+                <h2>Описание фото 2</h2>
+                <p>jgh</p>                
+            </div>
+            <div class="audio-container">
+                <div class="audio-row">
+                    <div class="audio-description">Описание аудио 2_1</div>
+                    <audio controls>
+                        <source src="audio2_1.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="audio-row">
+                    <div class="audio-description">Описание аудио 2_2</div>
+                    <audio controls>
+                        <source src="audio2_2.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="audio-row">
+                    <div class="audio-description">Описание аудио 2_3</div>
+                    <audio controls>
+                        <source src="audio2_3.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="audio-row">
+                    <div class="audio-description">Описание аудио 2_4</div>
+                    <audio controls>
+                        <source src="audio2_4.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="audio-row">
+                    <div class="audio-description">Описание аудио 2_5</div>
+                    <audio controls>
+                        <source src="audio2_5.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="audio-row">
+                    <div class="audio-description">Описание аудио 2_6</div>
+                    <audio controls>
+                        <source src="audio2_6.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="audio-row">
+                    <div class="audio-description">Описание аудио 2_7</div>
+                    <audio controls>
+                        <source src="audio2_7.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="audio-row">
+                    <div class="audio-description">Описание аудио 2_8</div>
+                    <audio controls>
+                        <source src="audio2_8.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="audio-row">
+                    <div class="audio-description">Описание аудио 2_9</div>
+                    <audio controls>
+                        <source src="audio2_9.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="audio-row">
+                    <div class="audio-description">Описание аудио 2_10</div>
+                    <audio controls>
+                        <source src="audio2_10.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="audio-row">
+                    <div class="audio-description">Описание аудио 2_11</div>
+                    <audio controls>
+                        <source src="audio2_11.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="audio-row">
+                    <div class="audio-description">Описание аудио 2_12</div>
+                    <audio controls>
+                        <source src="audio2_12.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="audio-row">
+                    <div class="audio-description">Описание аудио 2_13</div>
+                    <audio controls>
+                        <source src="audio2_13.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="audio-row">
+                    <div class="audio-description">Описание аудио 2_14</div>
+                    <audio controls>
+                        <source src="audio2_14.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="audio-row">
+                    <div class="audio-description">Описание аудио 2_15</div>
+                    <audio controls>
+                        <source src="audio2_15.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="photo3.jpg" alt="Фото 3">
+            <div class="description">
+                <h2>пилсге</h2>
+                <p>jgh</p>                
+            </div>
+            <div class="audio-container">
+                <div class="audio-row">
+                    <div class="audio-description">Описание аудио 3_1</div>
+                    <audio controls>
+                        <source src="audio3_1.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="audio-row">
+                    <div class="audio-description">Описание аудио 3_2</div>
+                    <audio controls>
+                        <source src="audio3_2.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="audio-row">
+                    <div class="audio-description">Описание аудио 3_3</div>
+                    <audio controls>
+                        <source src="audio3_3.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="audio-row">
+                    <div class="audio-description">Описание аудио 3_4</div>
+                    <audio controls>
+                        <source src="audio3_4.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="audio-row">
+                    <div class="audio-description">Описание аудио 3_5</div>
+                    <audio controls>
+                        <source src="audio3_5.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="audio-row">
+                    <div class="audio-description">Описание аудио 3_6</div>
+                    <audio controls>
+                        <source src="audio3_6.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="audio-row">
+                    <div class="audio-description">Описание аудио 3_7</div>
+                    <audio controls>
+                        <source src="audio3_7.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="audio-row">
+                    <div class="audio-description">Описание аудио 3_8</div>
+                    <audio controls>
+                        <source src="audio3_8.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="audio-row">
+                    <div class="audio-description">Описание аудио 3_9</div>
+                    <audio controls>
+                        <source src="audio3_9.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="audio-row">
+                    <div class="audio-description">Описание аудио 3_10</div>
+                    <audio controls>
+                        <source src="audio3_10.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="audio-row">
+                    <div class="audio-description">Описание аудио 3_11</div>
+                    <audio controls>
+                        <source src="audio3_11.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="audio-row">
+                    <div class="audio-description">Описание аудио 3_12</div>
+                    <audio controls>
+                        <source src="audio3_12.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="audio-row">
+                    <div class="audio-description">Описание аудио 3_13</div>
+                    <audio controls>
+                        <source src="audio3_13.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="audio-row">
+                    <div class="audio-description">Описание аудио 3_14</div>
+                    <audio controls>
+                        <source src="audio3_14.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="audio-row">
+                    <div class="audio-description">Описание аудио 3_15</div>
+                    <audio controls>
+                        <source src="audio3_15.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <a href="https://example.com/link1">Ссылка 1</a>
+        <a href="https://example.com/link2">Ссылка 2</a>
+        <a href="https://example.com/link3">Ссылка 3</a>
+    </div>
+</body>
+</html>
